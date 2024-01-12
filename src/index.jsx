@@ -5,21 +5,23 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 
-import Header from './components/Header/index.jsx';
-import Footer from './components/Footer/index.jsx';
+import Header from './components/Utils/Header.jsx';
+import Footer from './components/Utils/Footer.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
-    <Footer />
+    <div className="page-wrapper">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
+      <Footer />
+    </div>
   </React.StrictMode>
 );

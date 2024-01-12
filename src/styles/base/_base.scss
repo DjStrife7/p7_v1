@@ -1,10 +1,13 @@
+@import './typography';
+@import '../utils/variables';
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $gg-font;
+  font-family: $ggFont;
   font-style: normal;
   }
 
@@ -14,10 +17,8 @@ html {
   }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
   box-sizing: border-box;
-  background: $secondary-color;
+  background: $secondaryColor;
 }
 
 main {
@@ -158,4 +159,13 @@ template {
 
 [hidden] {
   display: none;
+}
+
+
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
