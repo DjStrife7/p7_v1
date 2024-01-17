@@ -1,6 +1,6 @@
 import Logo from '../../assets/logo/logo_white.svg';
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className='footer'>
       <img className='footer__logo' src={Logo} alt="Logo" />
@@ -8,3 +8,6 @@ export default function Footer() {
     </footer>
   )
 };
+
+
+export default Footer;

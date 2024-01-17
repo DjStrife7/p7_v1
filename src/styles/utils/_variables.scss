@@ -5,6 +5,7 @@ $proprioCircleColor: #C4C4C4;
 $starOffColor: #E3E3E3;
 
 $footerColor: #000000;
+$headerColor: rgba(255, 255, 255, 0.9);
 
 $bkgTextColor: #F6F6F6;
-$bkgThumbsColor: linear-gradient($primaryColor 50%, $footerColor);
+$bkgThumbsColor: linear-gradient($primaryColor 50%, $footerColor 135%);

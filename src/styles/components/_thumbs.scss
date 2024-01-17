@@ -1,0 +1,56 @@
+.thumb {
+  &__wrapper {
+    width: 85%;
+    height: auto;
+    position: relative;
+      top: 120px;
+      @media (min-width: 769px) and (max-width: 992px) {
+
+      }
+      @media (max-width: 768px) {
+
+      }  
+  }
+  &__gallery {
+    height: auto;
+    min-height: 2800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    @media (min-width: 769px) and (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+
+    }
+  }
+  &__link {
+    width: 345px;
+    height: 345px;
+    border-radius: 15px;
+    max-height: 345px;
+    background-image: $bkgThumbsColor;
+    @media (min-width: 769px) and (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+
+    }
+  }
+  &__title {
+    max-width: 240px;
+    position: relative;
+      top: 75%;
+    margin: 5%;
+    color: $secondaryColor;
+    font-size: 1.8em;
+    font-weight: 500;
+    @media (min-width: 769px) and (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+
+    }
+  }
+}

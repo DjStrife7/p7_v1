@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo/logo_coral.svg';
 import '../../styles/main.scss';
 
-export default function Header() {
+function Header() {
   return (
     <header className='header'>
       <img className='header__logo' src={Logo} alt="Logo" />
@@ -14,3 +14,6 @@ export default function Header() {
     </header>
   )
 };
+
+
+export default Header;

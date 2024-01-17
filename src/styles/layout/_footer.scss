@@ -7,8 +7,6 @@
   align-items: center;
   justify-content: flex-end;
   padding: 4% 5% 3% 5%;
-  position: fixed;
-    bottom: 0;
   background-color: $footerColor;
   @media (min-width: 769px) and (max-width: 992px) {
     min-height: 150px;
