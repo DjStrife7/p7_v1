@@ -1,7 +1,24 @@
+import React from "react";
+import { useLocation } from "react-router-dom";
+import imgBannerHome from "../../assets/img/kasa_cover_home.jpg";
+import imgBannerAbout from "../../assets/img/kasa_cover_about.jpg";
+
 function Banner() {
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
+  const showTitle = isHomePage;
+
   return (
     <div className="banner">
-      <h1 className='banner__title'>Chez vous,<br className="linebreak"/> partout et ailleurs</h1>
+      <div className="banner__overlay">
+        <img src={ isHomePage ? imgBannerHome : imgBannerAbout } className="banner__image" alt="banner_image" />
+      </div>
+      { showTitle && (
+        <h1 className='banner__title'>Chez vous,
+          <br className="linebreak"/> partout et ailleurs
+        </h1>
+      )}
     </div>
   )
 };

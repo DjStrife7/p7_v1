@@ -16,12 +16,8 @@ const Thumbs = () => {
           pathname: `/Lodging/index${Lodging.id}`,
           state: { Lodging: Lodging }
           }}>
-          <NavLink key={Lodging.id} to={{
-            pathname: `/Lodging/index${Lodging.id}`,
-            state: { Lodging: Lodging }
-            }}>
-            <h3 className='thumb__title'>{Lodging.title}</h3>
-          </NavLink>
+          <img className='thumb__cover' src={Lodging.cover} alt={Lodging.title} />
+          <h3 className='thumb__title'>{Lodging.title}</h3>
         </NavLink>
       ))}
     </section>

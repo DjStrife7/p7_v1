@@ -1,0 +1,16 @@
+.about {
+  &__wrapper {
+    width: 75%;
+    height: 1500px;
+    margin: 1.5% 0 3% 0;
+    background-color: rgba($color: #808080, $alpha: 1.0);
+  }
+}
+
+
+.banner__about {
+  background-image: url('..//../assets/img/kasa_cover_about.jpg');
+  &__title {
+    color: transparent;
+  }
+}

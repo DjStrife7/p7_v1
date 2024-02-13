@@ -1,7 +1,14 @@
-export default function About() {
+import Banner from '../components/Utils/Banner.jsx';
+
+function About() {
   return (
-    <div>
-      <h1>A Propos</h1>
-    </div>
+    <main className='page-wrapper'>
+      <Banner />
+      {/* <div className='about__wrapper'>
+        <p>Test pour vérification</p>
+      </div> */}
+    </main>
   )
 };
+
+export default About;
