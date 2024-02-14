@@ -1,0 +1,55 @@
+.error404 {
+  width: 90%;
+  max-width: 1440px;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primaryColor;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+  &__title {
+    font-size: 25em;
+    margin: 6% 0 3% 0;
+    @media (min-width: 769px) and (max-width: 992px) {
+      font-size: 22em;
+      margin: 10% 0 3% 0;
+    }
+    @media (max-width: 768px) {
+      font-size: 10em;
+      margin: 10% 0 6% 0;
+    }
+  }
+  &__message {
+    font-size: 3em;
+    font-weight: 450;
+    @media (min-width: 769px) and (max-width: 992px) {
+      font-size: 2.6em;
+    }
+    @media (max-width: 768px) {
+      font-size: 2em;
+      text-align: center;
+    }
+    &__linebreak {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+  &__link {
+    font-size: 1.8em;
+    margin-top: 12%;
+    color: $primaryColor;
+    text-decoration: underline;
+    @media (min-width: 769px) and (max-width: 992px) {
+      font-size: 1.6em;
+      margin-top: 18%;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.5em;
+      margin-top: 45%;
+    }
+  }
+}

@@ -16,7 +16,7 @@ function Banner() {
       </div>
       { showTitle && (
         <h1 className='banner__title'>Chez vous,
-          <br className="linebreak"/> partout et ailleurs
+          <br className="banner__title__linebreak"/> partout et ailleurs
         </h1>
       )}
     </div>

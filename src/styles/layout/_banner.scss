@@ -59,12 +59,11 @@
       font-size: 3.2em;
       margin: 0 5%;
     }
-  }
-}
-
-.linebreak {
-  display: none;
-  @media (max-width: 639px) {
-    display: block;
+    &__linebreak {
+      display: none;
+      @media (max-width: 639px) {
+        display: block;
+      }
+    }
   }
 }
