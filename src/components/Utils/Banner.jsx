@@ -1,7 +1,6 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
-import imgBannerHome from "../../assets/img/kasa_cover_home.jpg";
-import imgBannerAbout from "../../assets/img/kasa_cover_about.jpg";
+import { useLocation } from 'react-router-dom';
+import imgBannerHome from '../../assets/img/kasa_cover_home.jpg';
+import imgBannerAbout from '../../assets/img/kasa_cover_about.jpg';
 
 function Banner() {
   const location = useLocation();

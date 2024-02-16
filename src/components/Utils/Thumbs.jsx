@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import Lodging from '../../datas/LodgingList.json';
 
 const Thumbs = () => {
