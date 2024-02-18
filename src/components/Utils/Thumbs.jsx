@@ -14,7 +14,7 @@ const Thumbs = () => {
     <section className='thumb__gallery'>
       {Data.map((Lodging) => (
         <NavLink className='thumb__link'  key={Lodging.id} to={{
-          pathname: `/Lodging/index${Lodging.id}`,
+          pathname: `/Lodging/${Lodging.id}`,
           state: { Lodging: Lodging }
           }}>
           <img className='thumb__cover' src={Lodging.cover} alt={Lodging.title} />

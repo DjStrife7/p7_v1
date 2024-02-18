@@ -1,5 +1,5 @@
 import Banner from '../components/Utils/Banner.jsx';
-import Collapse from '../components/Utils/Collapsible.jsx';
+import Collapse from '../components/Utils/Collapse.jsx';
 
 import AboutDatas from '../datas/AboutDatas.json';
 

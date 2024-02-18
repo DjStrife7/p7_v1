@@ -11,7 +11,7 @@ function Banner() {
   return (
     <div className="banner">
       <div className="banner__overlay">
-        <img src={ isHomePage ? imgBannerHome : imgBannerAbout } className="banner__image" alt="banner_image" />
+        <img src={ isHomePage ? imgBannerHome : imgBannerAbout } className={ isHomePage ? "banner__image" : "banner__about" } alt="banner_image" />
       </div>
       { showTitle && (
         <h1 className='banner__title'>Chez vous,

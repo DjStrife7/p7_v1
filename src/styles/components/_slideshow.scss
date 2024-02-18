@@ -1,0 +1,55 @@
+.slider {
+  &__section {
+    width: 100%;
+    max-width: 1440px;
+    background-color: rgba(100, 100, 100, 0.7);
+    @media (min-width: 769px) and (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+  
+    }
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    @media (min-width: 769px) and (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+  
+    }
+    &__img {
+
+      @media (min-width: 769px) and (max-width: 992px) {
+
+      }
+      @media (max-width: 768px) {
+    
+      }
+    }
+  }
+}
+
+.back {
+
+  @media (min-width: 769px) and (max-width: 992px) {
+
+  }
+  @media (max-width: 768px) {
+
+  }
+
+}
+
+.next {
+
+  @media (min-width: 769px) and (max-width: 992px) {
+
+  }
+  @media (max-width: 768px) {
+
+  }
+
+}

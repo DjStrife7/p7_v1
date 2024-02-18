@@ -11,14 +11,12 @@
 @import 'base/font_awesome/solid.scss';
 
 @import 'layout/header';
-@import 'layout/navigation';
 @import 'layout/banner';
 @import 'layout/footer';
 
-@import 'components/carousel';
+@import 'components/slideshow';
 @import 'components/thumbs';
-@import 'components/collapsible';
+@import 'components/collapse';
 
-// @import 'pages/lodging';
-@import 'pages/about';
+@import 'pages/lodging';
 @import 'pages/error404';
