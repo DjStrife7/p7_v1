@@ -1,24 +1,24 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Lodging from '../../datas/LodgingList.json';
+import LodgingList from '../../datas/LodgingList.json';
 
 const Thumbs = () => {
   const [Data, SetData] = useState([]);
 
   useEffect(() => {
-    SetData(Lodging);
+    SetData(LodgingList);
   }, []);
 
   return (
     <section className='thumb__gallery'>
-      {Data.map((Lodging) => (
-        <NavLink className='thumb__link'  key={Lodging.id} to={{
-          pathname: `/Lodging/${Lodging.id}`,
-          state: { Lodging: Lodging }
+      {Data.map((LodgingList) => (
+        <NavLink className='thumb__link'  key={LodgingList.id} to={{
+          pathname: `/Lodging/${LodgingList.id}`,
+          state: { Lodging: LodgingList }
           }}>
-          <img className='thumb__cover' src={Lodging.cover} alt={Lodging.title} />
-          <h3 className='thumb__title'>{Lodging.title}</h3>
+          <img className='thumb__cover' src={LodgingList.cover} alt={LodgingList.title} />
+          <h3 className='thumb__title'>{LodgingList.title}</h3>
         </NavLink>
       ))}
     </section>
