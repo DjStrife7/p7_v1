@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import LodgingList from '../../datas/LodgingList.json';
+import LodgingList from '../datas/LodgingList.json';
 
 const Thumbs = () => {
   const [Data, SetData] = useState([]);
@@ -12,7 +12,7 @@ const Thumbs = () => {
 
   return (
     <section className='thumb__gallery'>
-      {Data.map((LodgingList) => (
+      {Data && Data.map((LodgingList) => (
         <NavLink className='thumb__link'  key={LodgingList.id} to={{
           pathname: `/Lodging/${LodgingList.id}`,
           state: { Lodging: LodgingList }

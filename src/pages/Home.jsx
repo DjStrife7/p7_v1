@@ -1,5 +1,5 @@
 import Banner from '../components/Utils/Banner.jsx';
-import Thumbs from '../components/Utils/Thumbs.jsx';
+import Thumbs from '../components/Thumbs.jsx';
 
 function Home() {
   return (

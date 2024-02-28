@@ -6,3 +6,68 @@
     transform: translateY(-5px);
   }
 }
+
+@keyframes jumpUp {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+
+@keyframes jumpRight {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes jumpLeft {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+
+@keyframes inToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+ 100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes outToLeft {
+  0% {
+    transform: translateX(0);
+  }
+ 100% {
+  transform: translateX(-100%);
+ }
+}
+
+@keyframes inToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+ 100% {
+  transform: translateX(0);
+ }
+}
+
+@keyframes outToRight {
+  0% {
+    transform: translateX(0);
+  }
+ 100% {
+  transform: translateX(100%);
+ }
+}
