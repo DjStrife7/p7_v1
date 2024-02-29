@@ -51,11 +51,11 @@ function LodgingSummary() {
           </div>
         </span>
         <div className='summary__aside__rating'>
-          {FilledStars.map((starOn) => (
+          {FilledStars && FilledStars.map((starOn) => (
               <img className='summary__aside__rating__stars' src={StarOn} alt='Star On' key={starOn} />
             ))
           }
-          {EmptyStars.map((starOff) => (
+          {EmptyStars && EmptyStars.map((starOff) => (
               <img className='summary__aside__rating__stars' src={StarOff} alt='Star Off' key={starOff.length} />
             ))
           }

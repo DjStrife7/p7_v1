@@ -69,7 +69,7 @@ function SlideShow() {
 
   
   return (
-    <section className='slider__section'>
+    <section className='slider'>
       <div className='slider__container'>{getSlideShowOrDefaultImg()}</div>
       {picturesAvailable() && pictures.length > 1 && (
         <div className='slider__action'>
