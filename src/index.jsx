@@ -19,9 +19,9 @@ root.render(
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path='/lodging/:id' exact element={<Lodging />} />
+          <Route path='/lodging/:id' element={<Lodging />} />
           <Route path='/about' exact element={<About />} />
-          <Route path='*' element={<Error404 />} />
+          <Route path='*' exact element={<Error404 />} />
         </Routes>
       </Router>
       <Footer />

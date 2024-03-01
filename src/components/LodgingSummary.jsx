@@ -47,16 +47,16 @@ function LodgingSummary() {
         <span className='summary__aside__host'>
           <h4 className='summary__aside__host__name'>{dataHost.name}</h4>
           <div className='summary__aside__host__img__container'>
-            <img className='summary__aside__host__img' src={dataHost.picture} alt={dataHost.name} />
+            <img className='summary__aside__host__img' src={dataHost.picture} alt={dataHost.name}/>
           </div>
         </span>
         <div className='summary__aside__rating'>
-          {FilledStars && FilledStars.map((starOn) => (
-              <img className='summary__aside__rating__stars' src={StarOn} alt='Star On' key={starOn} />
+          {FilledStars && FilledStars.map((starOn, starOnNumber) => (
+              <img className='summary__aside__rating__stars' src={StarOn} alt='Star On' key={starOn + '_' + starOnNumber} />
             ))
           }
-          {EmptyStars && EmptyStars.map((starOff) => (
-              <img className='summary__aside__rating__stars' src={StarOff} alt='Star Off' key={starOff.length} />
+          {EmptyStars && EmptyStars.map((starOff, starOffNumber) => (
+              <img className='summary__aside__rating__stars' src={StarOff} alt='Star Off' key={starOff + '_' + starOffNumber} />
             ))
           }
         </div>

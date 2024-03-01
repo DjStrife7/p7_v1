@@ -49,7 +49,7 @@ function SlideShow() {
     return (
       <div>
         {picture && picture.map((picture) => (
-          <img className="slider__action__img" src={picture} alt={currentLodging.id} />
+          <img className="slider__action__img" src={picture} alt={currentLodging.id} key={currentLodging.id} />
       ))}
       </div>
     );

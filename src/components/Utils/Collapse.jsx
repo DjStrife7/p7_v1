@@ -8,8 +8,6 @@ function Collapsible({ title, content }) {
   const location = useLocation();
   const isAboutPage = location.pathname === "/about";
 
-  console.log(isAboutPage);
-
   const [ IsOpen, setIsOpen ] = useState(false);
 
   const toggleOpen = () => {
@@ -41,7 +39,7 @@ function Collapsible({ title, content }) {
           </button>
         </div>
         { IsOpen && (
-            <p className={ 'collapse__lodging__section__infos' }>{content}</p>
+            <div className={ 'collapse__lodging__section__infos' }>{content}</div>
           )
         }
       </section>
